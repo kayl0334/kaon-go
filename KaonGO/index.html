@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#fffaf2">
+  <meta name="description" content="KaonGO — campus food, student favorites, and quick pickup.">
+  <title>KaonGO — Campus Food Pickup</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main id="app" aria-live="polite">
+    <section class="loading-screen" aria-label="Loading KaonGO">
+      <div class="brand-symbol" aria-hidden="true"><img src="assets/kaongo-logo.png" alt=""></div>
+      <h1>KaonGO</h1>
+      <p class="tagline">Good food. Less waiting.</p>
+      <div class="loading-track"><span></span></div>
+      <p class="loading-copy">Finding your next bite…</p>
+      <p class="campus-caption">FRESH FROM YOUR CAMPUS</p>
+    </section>
+  </main>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script defer src="app.js"></script>
+</body>
+</html>
